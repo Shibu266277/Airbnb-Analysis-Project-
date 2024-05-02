@@ -10,7 +10,6 @@ from PIL import Image
 # Displaying image in the first column
 with st.sidebar:
     st.image("D:/DATA_SCIENCE/ALL_PROJECTS/Airbnb.png",width=150)
-
     st.caption("Airbnb Data Visualization | By Shibu")
     # Menu items (assuming it's supposed to be in the sidebar)
     
