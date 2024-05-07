@@ -31,5 +31,3 @@ if selected == 'Home':
     home_text = "In this data analysis project, we delve into the world of Airbnb listings."
     styled_text = f"<h4 style='color: blue; text-align: left;'>{home_text}</h4>"
     st.markdown(styled_text, unsafe_allow_html=True)
-
-
