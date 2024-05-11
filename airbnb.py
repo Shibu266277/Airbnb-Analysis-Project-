@@ -26,9 +26,6 @@ with st.sidebar:
                                    {"background-color": "#FF5A5F"}})
 
 
-
-
-
  # Explain about airbnb data has description in Home option   
 if selected == 'Home':
 
