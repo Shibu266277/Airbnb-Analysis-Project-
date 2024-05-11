@@ -25,10 +25,10 @@ with st.sidebar:
                                                 "--hover-color": "#FF5A5F"},
                                    "nav-link-selected": 
                                    {"background-color": "#FF5A5F"}})
-    
+ 
+ # Explain about airbnb data has description in Home option   
 if selected == 'Home':
 
-    
     st.markdown(f""" <style>
                     .stApp {{
                         background: url('https://www.spinxdigital.com/app/uploads/2022/11/image-airbnb.jpg');
@@ -49,9 +49,7 @@ if selected == 'Home':
     st.markdown("#   ")
     st.markdown("#   ")
 
-
-
-
+# Airbnb Data Viewed by charts methods
 if selected=="Explore":
     
     st.markdown(f""" <style>.stApp {{
@@ -145,7 +143,7 @@ if selected=="Explore":
                              color='Property_Type',color_continuous_scale=px.colors.sequential.Agsunset)
         st.plotly_chart(fig,use_container_width=True) 
 
-        
+ # Detail collecting for data       
 elif selected=="Contact Us": 
 
     st.markdown(f""" <style>.stApp {{
