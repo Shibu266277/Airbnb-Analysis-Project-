@@ -57,7 +57,6 @@ if selected=="Explore":
                 background-size: cover}}
                 </style>""",unsafe_allow_html=True)
 
-
     # Upload Cleaned DataFrame Data
     df=pd.read_csv("D:\DATA_SCIENCE\ALL_PROJECTS\Airbnb.csv")
 
