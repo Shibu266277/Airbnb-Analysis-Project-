@@ -107,8 +107,7 @@ if selected=="Explore":
         st.plotly_chart(fig,use_container_width=True)
         
         
-    with col2: 
-      
+    with col2:  
         df1= df1= df.query(query).groupby('Property_Type',as_index=False)['Minimum_Nights'].mean()
         fig = px.pie(df1,
                              title='Minimum_Nights With Property_Type',
