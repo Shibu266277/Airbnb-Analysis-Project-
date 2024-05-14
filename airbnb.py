@@ -143,6 +143,7 @@ if selected=="Explore":
         st.plotly_chart(fig,use_container_width=True) 
 
 
+
  # Detail collecting for data       
 elif selected=="Contact Us": 
 
