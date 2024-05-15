@@ -25,7 +25,6 @@ with st.sidebar:
                                    "nav-link-selected": 
                                    {"background-color": "#FF5A5F"}})
 
-
  # Explain about airbnb data has description in Home option   
 if selected == 'Home':
 
