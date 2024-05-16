@@ -48,6 +48,8 @@ if selected == 'Home':
     st.markdown("#   ")
     st.markdown("#   ")
 
+
+
 # Airbnb Data Viewed by charts methods
 if selected=="Explore":
     
