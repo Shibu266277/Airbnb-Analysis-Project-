@@ -103,8 +103,7 @@ if selected=="Explore":
                              color='count',color_continuous_scale=px.colors.sequential.Darkmint_r)
         fig.update_traces( textposition='outside')
         st.plotly_chart(fig,use_container_width=True)
-        
-        
+             
     with col2:  
         df1= df1= df.query(query).groupby('Property_Type',as_index=False)['Minimum_Nights'].mean()
         fig = px.pie(df1,
