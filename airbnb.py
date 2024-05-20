@@ -7,7 +7,6 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 
 
-
 # Stream lit page making 
 # Displaying image in the first column
 with st.sidebar:
@@ -26,7 +25,7 @@ with st.sidebar:
                                                 "--hover-color": "#FF5A5F"},
                                    "nav-link-selected": 
                                    {"background-color": "#FF5A5F"}})
-
+ 
  # Explain about airbnb data has description in Home option   
 if selected == 'Home':
 
@@ -58,6 +57,7 @@ if selected=="Explore":
                 background-size: cover}}
                 </style>""",unsafe_allow_html=True)
 
+
     # Upload Cleaned DataFrame Data
     df=pd.read_csv("D:\DATA_SCIENCE\ALL_PROJECTS\Airbnb.csv")
 
@@ -83,7 +83,7 @@ if selected=="Explore":
         
         df1= df.query(query).groupby(["Room_Type"]).size().reset_index(name="count").sort_values(by='count',ascending=False)[:10]
         fig = px.pie(df1,
-                             title=' Room_Type With Count',
+                             title=' Room Type With Count',
                              values='count',names="Room_Type")
         fig.update_traces(textposition='inside', textinfo='value+label')
         st.plotly_chart(fig,use_container_width=True)    
@@ -105,8 +105,10 @@ if selected=="Explore":
                              color='count',color_continuous_scale=px.colors.sequential.Darkmint_r)
         fig.update_traces( textposition='outside')
         st.plotly_chart(fig,use_container_width=True)
-             
-    with col2:  
+        
+        
+    with col2: 
+      
         df1= df1= df.query(query).groupby('Property_Type',as_index=False)['Minimum_Nights'].mean()
         fig = px.pie(df1,
                              title='Minimum_Nights With Property_Type',
@@ -149,8 +151,8 @@ elif selected=="Contact Us":
                     background-size: cover}}
                     </style>""",unsafe_allow_html=True)
 
-    st.subheader(':Black[Airbnb Data Visualisation]')
-    st.markdown(''':red[**I Created this Airbnb Data Analysis Project Using "Python" to perform Data Cleansing, Understand Dataset, 
+    st.subheader(':blue[Airbnb Data Visualisation]')
+    st.markdown(''':red[**I Created this Airbnb Data Analysis Project Using "Python" to perform Data Cleaning, Understand Dataset, 
                 "Exploratery Data anslysis (EDA)" and Creating "Dashboard report" Using "Power BI".
                 Since 2008, guests and hosts have used Airbnb to expand on travelling possibilities and present more unique,
                 personalized way of experiencing the world. This dataset describes the listing activity and metrics in Amsterdam,
@@ -159,7 +161,7 @@ elif selected=="Contact Us":
 
     coll1, coll2 = st.columns(2)
     with coll1: 
-        st.title("Contact Us")  
+        st.title(":blue[Contact Us]")  
         st.caption(":red[Note:*fill all mandatory fields]") 
                 
         Name = st.text_input("Name*")
