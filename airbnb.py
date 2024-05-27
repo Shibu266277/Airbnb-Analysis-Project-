@@ -25,8 +25,10 @@ with st.sidebar:
                                                 "margin": "-2px",
                                                 "--hover-color": "#FF5A5F"},
                                    "nav-link-selected": 
+  
                                    {"background-color": "#FF5A5F"}})
- 
+
+
  # Explain about airbnb data has description in Home option   
 if selected == 'Home':
 
