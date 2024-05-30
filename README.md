@@ -10,6 +10,10 @@ This repository contains a Streamlit web app for exploratory data analysis of Ai
 - **Interactive Visualizations**: Select different analysis options from the sidebar to explore data interactively.
 - **About Section**: Learn more about the app and its features.
 
+
+
+
+
 ## Usage
 
 1. Clone the repository:
