@@ -11,9 +11,6 @@ This repository contains a Streamlit web app for exploratory data analysis of Ai
 - **About Section**: Learn more about the app and its features.
 
 
-
-
-
 ## Usage
 
 1. Clone the repository:
