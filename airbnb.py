@@ -10,7 +10,6 @@ from PIL import Image
 
 
 
-
 # Stream lit page making 
 # Displaying image in the first column
 with st.sidebar:
