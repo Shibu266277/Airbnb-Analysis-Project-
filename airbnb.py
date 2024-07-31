@@ -4,8 +4,7 @@ import pymongo
 import streamlit as st
 import plotly.express as px
 from streamlit_option_menu import option_menu
-from PIL import Image
-
+from PIL import Image 
 
 
 
